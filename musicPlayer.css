@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(to bottom, rgb(126, 213, 245), rgb(41, 117, 158));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s ease;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+  
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+    transition: transform 0.3s ease;
+}
+
+.brand:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: transparent;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 40px;
+    padding: 34px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background-image: url(./bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background: linear-gradient(to top, #4f96b8, rgb(71, 188, 231));
+    border-top: 1px solid #fff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background 0.3s ease;
+}
+
+.bottom:hover {
+    background: linear-gradient(to top, #4f96b8, rgb(71, 188, 231));
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons i:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    transition: width 0.5s ease;
+}
+
+#myProgressBar:hover {
+    width: 100%;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: rgb(154, 212, 233);
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.songItem:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    background-color: #262525;
+    color: white;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+    transition: transform 0.3s ease;
+}
+
+.songItem img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i:hover {
+    color: #4f96b8;
+    transform: rotate(20deg);
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: cursive;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.songInfo:hover img {
+    opacity: 1;
+}
+
+
